@@ -1,0 +1,17 @@
+
+http://localhost:9000/aggregator/api/payments
+Authorization: top-secret
+
+###
+
+POST http://localhost:9000/producer/api/payments
+Authorization: top-secret
+Content-Type: application/json
+
+{
+  "senderId": 1,
+  "senderCardNumber": "2222 2122 3222 2222",
+  "addresseeCardNumber": "3333 3332 3222 2222",
+  "amount": 1000000,
+  "comment": "Принимай бабки"
+}
